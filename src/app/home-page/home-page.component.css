@@ -818,6 +818,7 @@ input:-webkit-autofill:active {
     overflow-y: hidden;
     display: flex;
     flex-wrap: wrap;
+    background-size: contain;
   }
 
   .about-container {
