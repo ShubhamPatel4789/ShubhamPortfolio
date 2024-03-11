@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive macOS Style Portfolio</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+  <link rel="home-page" href="./home-page.component.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body>
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about">
+          <i class="fa-regular fa-address-card"></i>
+        </div>
+        <div class="icon-box projects" data-modal="projects">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial">
+          <i class="fa-solid fa-users-rectangle"></i>
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="popup-body about-container">
+
+
+          <div class="img-frame">
+            <img src="https://cdn.dribbble.com/users/4781516/screenshots/10796279/media/04eb24250e23400dc0162080a231b70c.gif" alt="" />
+          </div>
+
+
+
+
+          <div class="hero-content">
+            <h1>Shubham Patel</h1>
+            <p>
+              I'm a Full Stack developer. I have dedicated myself to creating
+              visually appealing and user-friendly Softwares. I'm always open to
+              using new skill sets and I believe in the power of collaboration,
+              working closely with designers and back-end developers to deliver
+              cohesive and effective solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <div class="skills-container">
+            <div class="skill-list">
+              <h1>Programming Languages</h1>
+              <ul>
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fab fa-js"></i> TypeScript</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+              </ul>
+            </div>
+
+
+            <div class="skill-list">
+              <h1>Web Technologies</h1>
+              <ul>
+                <li><i class="fab fa-react"></i> React.js</li>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+                <li><i class="fab fa-node-js"></i> Express.js</li>
+                <li><i class="fab fa-angular"></i> Angular</li>
+                <li><i class="fab fa-java"></i> Spring Boot</li>
+                <li><i class="fab fa-react"></i> Material UI</li>
+                <li><i class="fab fa-angular"></i> Rx.JS</li>
+              </ul>
+            </div>
+
+            <div class="skill-list">
+              <h1>Database Systems</h1>
+              <ul>
+                <li><i class="fas fa-database"></i> MySQL</li>
+                <li><i class="fas fa-database"></i> MongoDB</li>
+                <li><i class="fas fa-database"></i> FireStore</li>
+                <li><i class="fas fa-database"></i> NoSQL</li>
+                <li><i class="fas fa-database"></i> GraphQL</li>
+                <li><i class="fas fa-database"></i> PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div class="skill-list">
+              <h1>Cloud Technologies</h1>
+              <ul>
+                <li><i class="fab fa-aws"></i> Amazon Web Services</li>
+                <li><i class="fab fa-google"></i> Google Cloud Platform</li>
+                <li><i class="fab fa-google"></i> Firebase</li>
+              </ul>
+            </div>
+
+            <div class="skill-list">
+              <h1>Automation Tools</h1>
+              <ul>
+                <li><i class="fab fa-docker"></i> Docker</li>
+                <li><i class="fas fa-file-code"></i> Dockerfile</li>
+                <li>pyenv</li>
+                <li>DBeaver</li>
+                <li>pgAdmin</li>
+              </ul>
+            </div>
+
+            <div class="skill-list">
+              <h1>Security Tools</h1>
+              <ul>
+                <li><i class="fas fa-shield-alt"></i> Wireshark</li>
+                <li><i class="fas fa-shield-alt"></i> Nmap</li>
+                <li><i class="fab fa-linux"></i> Kali Linux</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="project-container">
+            <h1>Projects</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img src="https://logopond.com/logos/7cbefd1c803c7e9515ea4be59233da29.png" alt="" />
+                <div class="overlay">
+                  <h3>Trivia Titans Game</h3>
+                  <button class="more-btn">
+                    <a href="https://github.com/ShubhamPatel4789/TriviaTitans" target="_blank"><span>View on
+                        GitHub</span></a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img src="https://shantam-villa.netlify.app/images/shantam.png" alt="" />
+                <div class="overlay">
+                  <h3>Shantam Villa</h3>
+                  <button class="more-btn">
+                    <a href="https://github.com/ShubhamPatel4789/ShantamVilla" target="_blank"><span>View on
+                        GitHub</span></a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://cdn.dribbble.com/userupload/8044057/file/original-11ab5641234af6a98d48bba69309381b.png?resize=500x"
+                  alt="" />
+                <div class="overlay">
+                  <h3>CineScope</h3>
+                  <button class="more-btn">
+                    <a href="https://github.com/ShubhamPatel4789/CineScope" target="_blank"><span>View on
+                        GitHub</span></a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img src="https://loanscanada.ca/wp-content/uploads/2021/06/Student-Bank-Account-After-College.png"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Student Bank</h3>
+                  <button class="more-btn">
+                    <a href="https://github.com/ShubhamPatel4789/Student-Bank" target="_blank"><span>View on
+                        GitHub</span></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <div class="education-container">
+            <h2>Education</h2>
+            <ul>
+              <li>
+                <div class="university-info">
+                  <div class="university-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Gujarat-Technological-University-Logo.png"
+                      alt="University 1 Logo">
+                  </div>
+                  <p class="university-name">Gujarat Technological University</p>
+                </div>
+                <div class="degree-details">
+                  <p>Bachelor's Degree in Computer Science</p>
+                  <span class="gpa">GPA: 3.6 / 4</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="university-info">
+                  <div class="university-logo">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Dalhousie_University_Seal.svg/1200px-Dalhousie_University_Seal.svg.png"
+                      alt="University 1 Logo">
+                  </div>
+                  <p class="university-name">Dalhousie University</p>
+                </div>
+                <div class="degree-details">
+                  <p>Master's Degree in Computer Science</p>
+                  <span class="gpa">GPA: 3.8 / 4.3</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body contact-container">
+          <h1>Contact</h1>
+          <p>Hi there, you can contact with me via email.</p>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your mail.." />
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+            <a href="mailto:shubhamr1975@gmail.com?subject=Subject%20of%20the%20email&body=Body%20of%20the%20email">
+              <button class="submit-btn more-btn" type="button">
+                <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+              </button>
+            </a>
+
+            <div class="popup-body social-media-container">
+              <h1>Social Media</h1>
+              <div class="social-media-links">
+                <a href="https://github.com/shubhamPatel4789" target="_blank" rel="noopener noreferrer" class="social-link github">
+                  <i class="fab fa-github fa-lg"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/shubham-patel-a970ab154
+                " target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                  <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100009213170826" target="_blank" rel="noopener noreferrer" class="social-link facebook">
+                  <i class="fab fa-facebook fa-lg"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/shubhampatel4789/" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                  <i class="fab fa-instagram fa-lg"></i> Instagram
+                </a>
+                <a href="https://www.reddit.com/user/GoldHovercraft8629/" target="_blank" rel="noopener noreferrer" class="social-link reddit">
+                  <i class="fab fa-reddit fa-lg"></i> Reddit
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
