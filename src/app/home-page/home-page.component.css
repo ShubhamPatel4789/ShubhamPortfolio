@@ -803,8 +803,9 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns the content to the end */
+    display: grid;
+    place-items: end;
+    /* Aligns the content to the end */
     /* Other styles for the container */
   }
 }
@@ -812,7 +813,8 @@ input:-webkit-autofill:active {
 @media (max-width: 480px) {
 
   .about-container {
-    padding: 100px 15px 20px; /* Further reduced padding */
+    padding: 100px 15px 20px;
+    /* Further reduced padding */
   }
 
   .about-container .img-frame {
@@ -828,8 +830,9 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns the content to the end */
+    display: grid;
+    place-items: end;
+    /* Aligns the content to the end */
     /* Other styles for the container */
   }
 }
