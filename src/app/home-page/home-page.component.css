@@ -756,7 +756,7 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    padding: 5px;
+    padding: 10px;
      /* Adjust this value as needed */
   }
 
@@ -815,7 +815,7 @@ input:-webkit-autofill:active {
   }
   
   .icon-container {
-    padding: 2px;
+    padding: 5px;
   }
 
   .about-container .img-frame {
