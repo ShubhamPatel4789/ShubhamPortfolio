@@ -756,9 +756,9 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    bottom: 10px; /* Adjust this value as needed */
+    padding: auto; /* Adjust this value as needed */
   }
-  
+
   .user-info h2 {
     font-size: 1rem;
   }
