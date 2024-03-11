@@ -707,60 +707,93 @@ input:-webkit-autofill:active {
   display: flex;
   gap: 10px;
 }
-
 @media (max-width: 900px) {
   .popup-body {
-    padding: 30px;
+    padding: 2rem;
   }
 }
 
 @media (max-width: 750px) {
   .about-container {
-    grid-template-columns: 1fr;
     grid-template-rows: auto 4fr;
     grid-template-areas:
       "img-frame"
       "hero-content";
-    padding: 120px 20px 30px;
+    padding: 12rem 2rem 3rem;
   }
 
   .about-container .img-frame {
     grid-area: img-frame;
-    width: 230px;
+    margin: 0 auto;
+    max-width: 23rem;
     aspect-ratio: 1/1;
   }
 
   .hero-content {
     grid-area: hero-content;
-    margin-top: 110px;
+    margin-top: 11rem;
     text-align: center;
   }
 
   .about-container h1 {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
 }
 
 @media (max-width: 600px) {
   .card {
     height: auto;
-    padding: 20px;
+    padding: 2rem;
   }
 
   .user-info h2 {
     font-size: 1rem;
+  }
+
+  .education-container h2 {
+    font-size: 3rem; /* Smaller font size for the heading */
+    padding-bottom: 2rem;
+  }
+
+  .education-container ul {
+    padding-bottom: 3rem;
+  }
+
+  .education-container li {
+    flex: 0 0 100%; /* Make each item take the full width */
+    max-width: 100%; /* Ensure the max width is the full container width */
+    margin: 0 0 2rem; /* Adjust margin for better spacing */
+  }
+
+  .education-container .university-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-container .university-logo {
+    width: 18rem; /* Adjust for smaller screens */
+    height: 18rem; /* Adjust for smaller screens */
+    margin-bottom: 1.5rem; /* Increase separation */
+  }
+
+  .education-container .university-name {
+    font-size: 1.6rem; /* Adjust font size for readability */
+  }
+
+  .education-container .degree-details {
+    font-size: 1.4rem; /* Slightly smaller font size for degree details */
   }
 }
 
 @media (max-width: 480px) {
   .about-container .img-frame {
     grid-area: img-frame;
-    width: 150px;
+    width: 15rem;
     aspect-ratio: 1/1;
   }
 
   .all-projects img {
     height: auto;
-    max-height: 180px;
+    max-height: 18rem;
   }
 }
