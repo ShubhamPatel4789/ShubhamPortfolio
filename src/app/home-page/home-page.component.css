@@ -811,9 +811,16 @@ input:-webkit-autofill:active {
   }
 }
 
+@media (min-width: 391px) and (max-width: 540px) { /* Covers iPhone 13 in portrait and other similar devices */
+  .about-container {
+    padding: 30px 20px; /* Fine-tuning */
+  }
+}
+
+
 @media (max-width: 480px) {
 
-  section{
+  section {
     overflow-y: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -822,15 +829,8 @@ input:-webkit-autofill:active {
   }
 
   .about-container {
-    justify-content: center;
-  }
-
-
-  .about-container .img-frame {
-    grid-area: img-frame;
-    max-width: 180px;
-    margin: 0 auto;
-    aspect-ratio: 1/1;
+    padding: 100px 15px 20px;
+    /* Further reduced padding */
   }
 
   .all-projects img {
@@ -849,5 +849,5 @@ input:-webkit-autofill:active {
     /* Aligns the content to the end */
     /* Other styles for the container */
   }
-  
+
 }
