@@ -819,6 +819,7 @@ input:-webkit-autofill:active {
     display: flex;
     flex-wrap: wrap;
     background-size: contain;
+    max-height: -webkit-fill-available;
   }
 
   .about-container {
