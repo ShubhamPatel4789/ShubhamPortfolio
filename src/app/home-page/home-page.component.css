@@ -713,7 +713,7 @@ input:-webkit-autofill:active {
 
 @media (max-width: 900px) {
   .popup-body {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -725,7 +725,7 @@ input:-webkit-autofill:active {
     grid-template-areas:
       "img-frame"
       "hero-content";
-    padding: 10% 5%;
+    padding: 120px 20px 30px;
     /* Adjusted padding */
   }
 
@@ -754,8 +754,6 @@ input:-webkit-autofill:active {
     height: auto;
     padding: 2rem;
   }
-
-  
 
   .user-info h2 {
     font-size: 1rem;
@@ -803,16 +801,18 @@ input:-webkit-autofill:active {
     font-size: 1.4rem;
     /* Slightly smaller font size for degree details */
   }
+
+  .icon-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the end */
+    /* Other styles for the container */
+  }
 }
 
 @media (max-width: 480px) {
 
   .about-container {
     padding: 100px 15px 20px; /* Further reduced padding */
-  }
-  
-  .icon-container {
-    padding: 5px;
   }
 
   .about-container .img-frame {
@@ -824,5 +824,12 @@ input:-webkit-autofill:active {
   .all-projects img {
     height: auto;
     max-height: 18rem;
+    align-items: center;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the end */
+    /* Other styles for the container */
   }
 }
