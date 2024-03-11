@@ -106,34 +106,28 @@ section {
 
 .about {
   background: rgb(182, 164, 248);
-  background: linear-gradient(
-    30deg,
-    rgb(182, 164, 248) 0%,
-    rgb(75, 52, 159) 70%
-  );
+  background: linear-gradient(30deg,
+      rgb(182, 164, 248) 0%,
+      rgb(75, 52, 159) 70%);
 }
 
 .testimonial {
   background-color: #f6c66e;
-  
+
 }
 
 .projects {
   background: rgb(169, 207, 124);
-  background: linear-gradient(
-    310deg,
-    rgb(169, 207, 124) 0%,
-    rgb(77, 120, 31) 60%
-  );
+  background: linear-gradient(310deg,
+      rgb(169, 207, 124) 0%,
+      rgb(77, 120, 31) 60%);
 }
 
 .contact {
   background-color: rgb(224, 129, 157);
-  background-image: linear-gradient(
-    340deg,
-    rgb(243, 151, 178) 0%,
-    rgb(147, 20, 58) 100%
-  );
+  background-image: linear-gradient(340deg,
+      rgb(243, 151, 178) 0%,
+      rgb(147, 20, 58) 100%);
 }
 
 /* ------- */
@@ -323,7 +317,7 @@ body.prevent-background-scroll {
   border-radius: 8px;
   box-shadow: rgba(62, 63, 168, 0.8) 0px 10px 30px 8px,
     rgba(62, 63, 168, 0.8) 0px 0px 0px 2px;
-  
+
 }
 
 .about-container .img-frame img {
@@ -340,13 +334,14 @@ body.prevent-background-scroll {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Adjust as needed */
+  justify-content: space-between;
+  /* Adjust as needed */
 }
 
 .skill-list {
   flex: 1 1 auto;
   max-width: 300px;
-  padding-bottom: 30px ; 
+  padding-bottom: 30px;
 }
 
 .skill-list h1 {
@@ -368,11 +363,9 @@ body.prevent-background-scroll {
   font-size: 1rem;
   font-weight: 500;
   border-radius: 5px;
-  background: linear-gradient(
-    130deg,
-    rgba(162, 234, 55, 0.7) 0%,
-    rgba(46, 152, 74, 0.5) 100%
-  );
+  background: linear-gradient(130deg,
+      rgba(162, 234, 55, 0.7) 0%,
+      rgba(46, 152, 74, 0.5) 100%);
   backdrop-filter: blur(30px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 8px 12px;
@@ -506,7 +499,7 @@ body.prevent-background-scroll {
 .education-container h2 {
   text-align: center;
   font-size: 50px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .education-container ul {
@@ -514,37 +507,47 @@ body.prevent-background-scroll {
   padding-bottom: 50px;
   margin: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next row */
-  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap;
+  /* Allow items to wrap to the next row */
+  justify-content: center;
+  /* Center items horizontally */
 }
 
 .education-container li {
   list-style: none;
-  margin: 0 20px 20px; /* Add margin around each item */
+  margin: 0 20px 20px;
+  /* Add margin around each item */
   text-align: center;
-  flex: 0 0 calc(50% - 40px); /* Each item takes 50% of the container width with margins included */
-  max-width: calc(50% - 40px); /* Max width for each item */
+  flex: 0 0 calc(50% - 40px);
+  /* Each item takes 50% of the container width with margins included */
+  max-width: calc(50% - 40px);
+  /* Max width for each item */
 }
 
 .education-container .university-info {
   display: flex;
   align-items: center;
-  flex-direction: column; /* Arrange items vertically */
+  flex-direction: column;
+  /* Arrange items vertically */
 }
 
 .education-container .university-logo {
-  width: 220px; /* Adjust as needed */
-  height: 220px; /* Adjust as needed */
+  width: 220px;
+  /* Adjust as needed */
+  height: 220px;
+  /* Adjust as needed */
   overflow: hidden;
-  margin-bottom: 10px; /* Add margin bottom for separation */
+  margin-bottom: 10px;
+  /* Add margin bottom for separation */
   position: relative;
-  
+
 }
 
 .education-container .university-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container */
+  object-fit: cover;
+  /* Ensure the image covers the entire container */
 }
 
 .education-container .university-name {
@@ -562,7 +565,7 @@ body.prevent-background-scroll {
 
 
 .social-media-container {
-  
+
   padding-top: 30px;
 }
 
@@ -715,13 +718,33 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 750px) {
-  .about-container { grid-template-rows: auto 4fr; grid-template-areas: "img-frame" "hero-content"; padding: 120px 20px 30px; }
+  .about-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    /* Adjusted for dynamic content */
+    grid-template-areas:
+      "img-frame"
+      "hero-content";
+    padding: 120px 20px 30px;
+    /* Adjusted padding */
+  }
 
-  .about-container .img-frame { grid-area: img-frame; margin: 0 auto; max-width: 230px; aspect-ratio: 1/1; }
-  
-  .hero-content { grid-area: hero-content; margin-top: 110px; text-align: center; }
-  
-  .about-container h1 { margin-bottom: 16px; } }
+  .hero-content {
+    margin-top: 30px;
+    /* Reduced margin */
+  }
+
+  .about-container .img-frame {
+    grid-area: img-frame;
+    margin: 0 auto;
+    max-width: 230px;
+    aspect-ratio: 1/1;
+  }
+
+  .about-container h1 {
+    margin-bottom: 16px;
+  }
+}
 
 
 @media (max-width: 600px) {
@@ -735,7 +758,8 @@ input:-webkit-autofill:active {
   }
 
   .education-container h2 {
-    font-size: 3rem; /* Smaller font size for the heading */
+    font-size: 3rem;
+    /* Smaller font size for the heading */
     padding-bottom: 2rem;
   }
 
@@ -744,9 +768,12 @@ input:-webkit-autofill:active {
   }
 
   .education-container li {
-    flex: 0 0 100%; /* Make each item take the full width */
-    max-width: 100%; /* Ensure the max width is the full container width */
-    margin: 0 0 2rem; /* Adjust margin for better spacing */
+    flex: 0 0 100%;
+    /* Make each item take the full width */
+    max-width: 100%;
+    /* Ensure the max width is the full container width */
+    margin: 0 0 2rem;
+    /* Adjust margin for better spacing */
   }
 
   .education-container .university-info {
@@ -755,17 +782,22 @@ input:-webkit-autofill:active {
   }
 
   .education-container .university-logo {
-    width: 18rem; /* Adjust for smaller screens */
-    height: 18rem; /* Adjust for smaller screens */
-    margin-bottom: 1.5rem; /* Increase separation */
+    width: 18rem;
+    /* Adjust for smaller screens */
+    height: 18rem;
+    /* Adjust for smaller screens */
+    margin-bottom: 1.5rem;
+    /* Increase separation */
   }
 
   .education-container .university-name {
-    font-size: 1.6rem; /* Adjust font size for readability */
+    font-size: 1.6rem;
+    /* Adjust font size for readability */
   }
 
   .education-container .degree-details {
-    font-size: 1.4rem; /* Slightly smaller font size for degree details */
+    font-size: 1.4rem;
+    /* Slightly smaller font size for degree details */
   }
 }
 
