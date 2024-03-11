@@ -825,9 +825,11 @@ input:-webkit-autofill:active {
     justify-content: center;
   }
 
+
   .about-container .img-frame {
     grid-area: img-frame;
     width: 180px;
+    height: auto;
     aspect-ratio: 1/1;
   }
 
