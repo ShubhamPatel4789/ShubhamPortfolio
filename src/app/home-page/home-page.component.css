@@ -815,7 +815,9 @@ input:-webkit-autofill:active {
 @media (max-width: 480px) {
 
   section{
-    overflow-y: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .about-container {
