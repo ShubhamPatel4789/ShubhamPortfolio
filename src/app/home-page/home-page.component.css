@@ -756,7 +756,7 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    padding: 2rem;
+    padding: 5px;
      /* Adjust this value as needed */
   }
 
@@ -812,6 +812,10 @@ input:-webkit-autofill:active {
 
   .about-container {
     padding: 100px 15px 20px; /* Further reduced padding */
+  }
+  
+  .icon-container {
+    padding: 2px;
   }
 
   .about-container .img-frame {
