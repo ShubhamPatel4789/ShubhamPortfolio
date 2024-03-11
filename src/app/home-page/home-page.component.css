@@ -61,7 +61,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 98vh;
+  height: 97vh;
 }
 
 /* ------------ */
@@ -838,4 +838,5 @@ input:-webkit-autofill:active {
     /* Aligns the content to the end */
     /* Other styles for the container */
   }
+  
 }
