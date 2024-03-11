@@ -755,6 +755,10 @@ input:-webkit-autofill:active {
     padding: 2rem;
   }
 
+  .icon-container {
+    bottom: 10px; /* Adjust this value as needed */
+  }
+  
   .user-info h2 {
     font-size: 1rem;
   }
@@ -808,7 +812,7 @@ input:-webkit-autofill:active {
   .about-container {
     padding: 100px 15px 20px; /* Further reduced padding */
   }
-  
+
   .about-container .img-frame {
     grid-area: img-frame;
     width: 15rem;
