@@ -707,6 +707,7 @@ input:-webkit-autofill:active {
   display: flex;
   gap: 10px;
 }
+
 @media (max-width: 900px) {
   .popup-body {
     padding: 2rem;
@@ -720,8 +721,9 @@ input:-webkit-autofill:active {
       "img-frame"
       "hero-content";
     padding: 12rem 2rem 3rem;
+    justify-items: center; /* Add this line */
+    align-items: center; /* Add this line */
   }
-
   .about-container .img-frame {
     grid-area: img-frame;
     margin: 0 auto;
