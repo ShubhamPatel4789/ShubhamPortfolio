@@ -821,6 +821,10 @@ input:-webkit-autofill:active {
     max-height: -webkit-fill-available;
   }
 
+  .about-container {
+    justify-content: center;
+  }
+
   .about-container .img-frame {
     grid-area: img-frame;
     width: 180px;
