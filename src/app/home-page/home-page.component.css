@@ -813,7 +813,7 @@ input:-webkit-autofill:active {
 
 @media (min-width: 391px) and (max-width: 540px) { /* Covers iPhone 13 in portrait and other similar devices */
   .about-container {
-    padding: 30px 20px; /* Fine-tuning */
+    padding: 100px 30px 20px; /* Fine-tuning */
   }
 }
 
