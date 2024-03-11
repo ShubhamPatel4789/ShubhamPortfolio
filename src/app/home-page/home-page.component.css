@@ -756,6 +756,10 @@ input:-webkit-autofill:active {
     padding: 2rem;
   }
 
+  .all-projects {
+    justify-content: center;
+  }
+
   .user-info h2 {
     font-size: 1rem;
   }
@@ -803,28 +807,18 @@ input:-webkit-autofill:active {
     /* Slightly smaller font size for degree details */
   }
 
-  .icon-container {
-    display: flex;
-    place-items: inherit;
-    padding: auto;
-    /* Aligns the content to the end */
-    /* Other styles for the container */
-  }
+
 }
 
 @media (max-width: 480px) {
 
-  section{
-    overflow-y: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    background-size: contain;
-    max-height: -webkit-fill-available;
-  }
-
   .about-container {
     padding: 100px 15px 20px;
     /* Further reduced padding */
+  }
+
+  .all-projects {
+    justify-content: center;
   }
 
   .about-container .img-frame {
@@ -833,18 +827,5 @@ input:-webkit-autofill:active {
     aspect-ratio: 1/1;
   }
 
-  .all-projects img {
-    height: auto;
-    max-height: 18rem;
-    align-items: center;
-  }
 
-  .icon-container {
-    display: flex;
-    place-items: inherit;
-    justify-content: sa;
-    /* Aligns the content to the end */
-    /* Other styles for the container */
-  }
-  
 }
