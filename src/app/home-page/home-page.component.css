@@ -717,11 +717,11 @@ input:-webkit-autofill:active {
 @media (max-width: 750px) {
   .about-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 4fr;
     grid-template-areas:
       "img-frame"
       "hero-content";
-    padding: 160px 30px 50px;
+    padding: 120px 20px 30px;
   }
 
   .about-container .img-frame {
@@ -743,22 +743,24 @@ input:-webkit-autofill:active {
 
 @media (max-width: 600px) {
   .card {
-    height: 280px;
+    height: auto;
+    padding: 20px;
   }
 
   .user-info h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-container .img-frame {
     grid-area: img-frame;
-    width: 180px;
+    width: 150px;
     aspect-ratio: 1/1;
   }
 
   .all-projects img {
-    height: 180px;
+    height: auto;
+    max-height: 180px;
   }
 }
