@@ -721,14 +721,13 @@ input:-webkit-autofill:active {
 @media (max-width: 750px) {
   .about-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    /* Adjusted for dynamic content */
+    grid-template-rows: 1fr 4fr;
     grid-template-areas:
       "img-frame"
       "hero-content";
-    padding: 120px 20px 30px;
-    /* Adjusted padding */
+    padding: 160px 30px 50px;
   }
+
 
   .hero-content {
     margin-top: 30px;
@@ -754,10 +753,6 @@ input:-webkit-autofill:active {
   .card {
     height: auto;
     padding: 2rem;
-  }
-
-  .all-projects {
-    justify-content: center;
   }
 
   .user-info h2 {
@@ -807,25 +802,52 @@ input:-webkit-autofill:active {
     /* Slightly smaller font size for degree details */
   }
 
-
+  .icon-container {
+    display: flex;
+    place-items: inherit;
+    padding: auto;
+    /* Aligns the content to the end */
+    /* Other styles for the container */
+  }
 }
 
 @media (max-width: 480px) {
+
+  section{
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: contain;
+    max-height: -webkit-fill-available;
+  }
 
   .about-container {
     padding: 100px 15px 20px;
     /* Further reduced padding */
   }
 
+  .about-container .img-frame {
+    grid-area: img-frame;
+    width: 180px;
+    aspect-ratio: 1/1;
+  }
+
+  .all-projects img {
+    height: auto;
+    max-height: 18rem;
+    align-items: center;
+  }
+
   .all-projects {
     justify-content: center;
   }
 
-  .about-container .img-frame {
-    grid-area: img-frame;
-    width: 15rem;
-    aspect-ratio: 1/1;
+  .icon-container {
+    display: flex;
+    place-items: inherit;
+    justify-content: sa;
+    /* Aligns the content to the end */
+    /* Other styles for the container */
   }
-
-
+  
 }
