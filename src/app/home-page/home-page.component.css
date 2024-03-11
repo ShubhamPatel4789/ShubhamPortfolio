@@ -803,7 +803,7 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    display: grid;
+    display: flex;
     place-items: inherit;
     /* Aligns the content to the end */
     /* Other styles for the container */
@@ -830,7 +830,7 @@ input:-webkit-autofill:active {
   }
 
   .icon-container {
-    display: grid;
+    display: flex;
     place-items: inherit;
     /* Aligns the content to the end */
     /* Other styles for the container */
