@@ -830,7 +830,9 @@ input:-webkit-autofill:active {
 
   .about-container {
     display: flex;
-    place-items: inherit;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
     /* Further reduced padding */
   }
 
