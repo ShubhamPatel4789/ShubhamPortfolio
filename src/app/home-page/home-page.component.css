@@ -149,7 +149,7 @@ body.prevent-background-scroll {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   z-index: 20;
   animation: openPopup 0.6s ease-in-out 1 normal;
 }
@@ -823,7 +823,7 @@ input:-webkit-autofill:active {
   .icon-container{
     margin-top: 10%;
   }
-  .popup .about{
+  .popup{
     margin-bottom: 10%;
   }
 
