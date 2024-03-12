@@ -829,6 +829,8 @@ input:-webkit-autofill:active {
   }
 
   .about-container {
+    display: flex;
+    place-items: inherit;
     padding: 100px 15px 20px;
     height: auto;
     max-height: min-content;
