@@ -52,7 +52,7 @@ body {
   background-image: url(https://512pixels.net/wp-content/uploads/2021/06/12-Dark-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+  justify-content: center;
 }
 
 section {
@@ -172,7 +172,8 @@ body.prevent-background-scroll {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: min(900px, 90%);
+  width: 80%;
+  max-width: 900px;
   background: rgba(133, 133, 133, 0.2);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   backdrop-filter: blur(10px);
@@ -726,6 +727,10 @@ input:-webkit-autofill:active {
       "img-frame"
       "hero-content";
     padding: 160px 30px 50px;
+  }
+
+  .popup-body {
+    height: auto; /* Allow content to adjust to screen size */
   }
 
 
