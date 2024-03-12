@@ -847,6 +847,10 @@ input:-webkit-autofill:active {
     justify-content: center;
   }
 
+  .popup-body {
+    height: auto; /* Allow content to adjust to screen size */
+  }
+
   .icon-container {
     display: flex;
     place-items: inherit;
