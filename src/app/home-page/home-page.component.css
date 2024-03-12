@@ -811,11 +811,6 @@ input:-webkit-autofill:active {
   }
 }
 
-@media (min-width: 391px) and (max-width: 540px) { /* Covers iPhone 13 in portrait and other similar devices */
-  .about-container {
-    padding: 100px 30px 20px; /* Fine-tuning */
-  }
-}
 
 
 @media (max-width: 480px) {
@@ -825,20 +820,39 @@ input:-webkit-autofill:active {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    
+
   }
 
   .about-container {
     align-items: center;
-    /* Further reduced padding */
+    flex-direction: column;
+    /* Stack flex items vertically */
+  
+    /* Default padding for larger screens */
   }
 
   .about-container .img-frame {
     height: auto;
-    max-width: 18rem;
-    
+    max-height: 20vh;
+    padding-bottom: 30%;
+    /* Use vh units for max-height */
   }
 
+  .about-container h1 {
+    font-size: 4vw;
+    /* Use vw units for font-size */
+  }
+
+  .about-container p {
+    font-size: 4vw;
+    /* Use vw units for font-size */
+  }
+
+  .all-projects img {
+    height: auto;
+    max-height: 20vh;
+    /* Use vh units for max-height */
+  }
 
   .all-projects img {
     height: auto;
