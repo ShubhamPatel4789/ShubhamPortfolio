@@ -829,7 +829,7 @@ input:-webkit-autofill:active {
   }
 
   .about-container {
-    padding: 1rem;
+    padding: 10%;
     /* Further reduced padding */
   }
 
