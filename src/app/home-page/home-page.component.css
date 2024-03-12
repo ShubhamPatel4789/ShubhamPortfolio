@@ -64,8 +64,6 @@ section {
   height: 100%;
 }
 
-/* ------------ */
-/* PROFILE */
 
 
 /* ------------ */
@@ -805,7 +803,7 @@ input:-webkit-autofill:active {
   .icon-container {
     display: flex;
     place-items: inherit;
-    padding: auto;
+    
     /* Aligns the content to the end */
     /* Other styles for the container */
   }
@@ -820,14 +818,14 @@ input:-webkit-autofill:active {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-
   }
+
+  
 
   .about-container {
     align-items: center;
     flex-direction: column;
-    /* Stack flex items vertically */
-  
+    padding: 15%;
     /* Default padding for larger screens */
   }
 
@@ -865,10 +863,10 @@ input:-webkit-autofill:active {
   }
 
 
-
   .icon-container {
     display: flex;
     place-items: inherit;
+    margin-top: 10%;
     /* Aligns the content to the end */
     /* Other styles for the container */
   }
