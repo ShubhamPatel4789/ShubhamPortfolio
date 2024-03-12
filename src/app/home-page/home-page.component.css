@@ -820,7 +820,12 @@ input:-webkit-autofill:active {
     position: relative;
   }
 
-  
+  .icon-container{
+    margin-top: 10%;
+  }
+  .popup{
+    margin-bottom: 10%;
+  }
 
   .about-container {
     align-items: center;
@@ -866,7 +871,7 @@ input:-webkit-autofill:active {
   .icon-container {
     display: flex;
     place-items: inherit;
-    margin-top: 10%;
+    
     /* Aligns the content to the end */
     /* Other styles for the container */
   }
