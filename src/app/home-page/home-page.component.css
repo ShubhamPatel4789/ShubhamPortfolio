@@ -831,7 +831,6 @@ input:-webkit-autofill:active {
   .about-container {
     display: flex;
     place-items: inherit;
-    flex-direction: column;
     height: auto;
     max-height: min-content;
     /* Further reduced padding */
