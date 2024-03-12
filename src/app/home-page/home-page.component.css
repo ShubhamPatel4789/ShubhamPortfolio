@@ -728,7 +728,7 @@ input:-webkit-autofill:active {
     padding: 160px 30px 50px;
   }
 
-  .popup-body {
+  body {
     height: auto; /* Allow content to adjust to screen size */
   }
 
@@ -847,7 +847,7 @@ input:-webkit-autofill:active {
     justify-content: center;
   }
 
-  .popup-body {
+  body {
     height: auto; /* Allow content to adjust to screen size */
   }
 
