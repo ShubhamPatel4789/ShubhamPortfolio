@@ -728,10 +728,6 @@ input:-webkit-autofill:active {
     padding: 160px 30px 50px;
   }
 
-  body {
-    height: auto; /* Allow content to adjust to screen size */
-  }
-
 
   .hero-content {
     margin-top: 30px;
@@ -828,8 +824,8 @@ input:-webkit-autofill:active {
     overflow-y: hidden;
     display: flex;
     flex-wrap: wrap;
-    background-size: contain;
-    max-height: -webkit-fill-available;
+    position: relative;
+    
   }
 
   .about-container {
@@ -847,9 +843,7 @@ input:-webkit-autofill:active {
     justify-content: center;
   }
 
-  body {
-    height: auto; /* Allow content to adjust to screen size */
-  }
+
 
   .icon-container {
     display: flex;
