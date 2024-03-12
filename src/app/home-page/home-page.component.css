@@ -828,21 +828,15 @@ input:-webkit-autofill:active {
     
   }
 
-  popup-body .about-container {
-    padding: 10%;
-
-    /* Further reduced padding */
-  }
-
   .about-container {
-    padding: 10%;
+    align-items: center;
     /* Further reduced padding */
   }
 
   .about-container .img-frame {
     height: auto;
     max-width: 18rem;
-    aspect-ratio: 1/1;
+    
   }
 
 
