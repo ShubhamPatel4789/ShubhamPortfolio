@@ -129,6 +129,18 @@ section {
       rgb(147, 20, 58) 100%);
 }
 
+.resume-button {
+  background-color: rgb(224, 129, 157);
+  background-image: linear-gradient(340deg,
+      rgb(67, 195, 101) 0%,
+      rgb(26, 21, 95) 100%);
+}
+
+.resume-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
 /* ------- */
 /* POPUP */
 
@@ -709,6 +721,31 @@ input:-webkit-autofill:active {
   display: flex;
   gap: 10px;
 }
+
+
+/* ------------ */
+/* Resume */
+
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 0;
+}
+
+.resume-container h1,
+.resume-container p {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.resume-container p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
 
 @media (max-width: 900px) {
   .popup-body {
