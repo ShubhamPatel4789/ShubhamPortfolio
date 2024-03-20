@@ -8,4 +8,4 @@ import { inject } from '@vercel/analytics';
 
 platformBrowserDynamic().bootstrapModule(AppRoutingModule)
   .catch(err => console.error(err));
-  inject();
+inject();
