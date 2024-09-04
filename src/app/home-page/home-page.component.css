@@ -543,12 +543,12 @@ body.prevent-background-scroll {
 }
 
 .education-container .university-logo {
-  width: 220px;
+  width: 320px;
   /* Adjust as needed */
-  height: 220px;
+  height: 320px;
   /* Adjust as needed */
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   /* Add margin bottom for separation */
   position: relative;
 
@@ -576,8 +576,8 @@ body.prevent-background-scroll {
 
 
 .social-media-container {
-
-  padding-top: 30px;
+  padding-top: 50px;
+  height: fit-content;
 }
 
 .social-media-links {
@@ -826,6 +826,14 @@ input:-webkit-autofill:active {
     margin-bottom: 1.5rem;
     /* Increase separation */
   }
+  .education-container .university2-logo {
+    width: 18rem;
+    /* Adjust for smaller screens */
+    height: 22rem;
+    /* Adjust for smaller screens */
+    margin-bottom: 1.5rem;
+    /* Increase separation */
+  }
 
   .education-container .university-name {
     font-size: 1.6rem;
@@ -911,6 +919,13 @@ input:-webkit-autofill:active {
     
     /* Aligns the content to the end */
     /* Other styles for the container */
+  }
+  .hero-content {
+    margin-top: 30px;
+    grid-area: hero-content;
+    text-align: center;
+    /* width: 120%; */
+    /* Reduced margin */
   }
 
 }
